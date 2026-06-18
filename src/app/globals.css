@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #030712;
+}
+
+::selection {
+  background: #06b6d4;
+}
+body {
+  background: #030712;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background:
+          radial-gradient(circle at 20% 20%, #06b6d4 0%, transparent 40%),
+          radial-gradient(circle at 80% 80%, #8b5cf6 0%, transparent 40%);
+
+  opacity: 0.15;
+  animation: floatBg 15s infinite alternate;
+}
+
+@keyframes floatBg {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50px);
+  }
+}
+:root {
+  --background: #050505;
+  --card: #111111;
+  --gold: #D4AF37;
+  --gold-light: #F5D76E;
+  --text: #FFFFFF;
+  --muted: #A1A1AA;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+}

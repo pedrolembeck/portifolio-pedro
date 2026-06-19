@@ -13,6 +13,7 @@ import {
     FaNodeJs,
     FaPython,
     FaReact,
+    FaPhp
 } from "react-icons/fa";
 
 
@@ -42,6 +43,7 @@ const skills = [
     { Icon: FaGithub, name: "GitHub" },
     { Icon: FaDatabase, name: "SQL" },
     { Icon: SiTableau, name: "Tableau" },
+    {Icon : FaPhp, name : "PHP"}
 ];
 
 export default function Skills() {
